@@ -63,6 +63,6 @@ jobs:
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add merge_data/*.pkl
           git commit -m 'Update .pkl files in merge_data directory'
-          git push origin master
+          git push
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
