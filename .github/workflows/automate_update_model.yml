@@ -25,13 +25,6 @@ jobs:
       - name: Run update
         run: python ./main/main_update.py
 
-      - name: Create Issue
-        uses: peter-evans/create-issue-from-file@v5
-        with:
-          title: 'Movies Data for Action Run ${{ github.run_number }}'
-          content-filepath: movies_data.csv
-          labels: data
-
       - name: Upload output
         uses: actions/upload-artifact@v4
         with:
