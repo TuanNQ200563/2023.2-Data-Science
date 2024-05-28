@@ -1,8 +1,8 @@
 name: Update data and Update model
 
 on:
-  schedule:
-    - cron: '0 4 * * *' # This cron expression runs the job daily
+  # schedule:
+  #   - cron: '0 4 * * *' # This cron expression runs the job daily
   workflow_dispatch:
 
 jobs:
